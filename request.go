@@ -31,6 +31,7 @@ func (ls *LimitedString) UnmarshalJSON(data []byte) error {
 	return nil
 }
 
+// Surface struct for unmarshal http.Request.Body
 type PreRequest struct {
 	ID     LimitedString   `json:"id,omitempty"`
 	Method LimitedString   `json:"method,omitempty"`
