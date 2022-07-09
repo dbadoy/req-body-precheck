@@ -14,8 +14,8 @@ var (
 
 type LimitedString string
 
-func (l LimitedString) MarshalJSON() ([]byte, error) {
-	return json.Marshal(l)
+func (ls LimitedString) MarshalJSON() ([]byte, error) {
+	return json.Marshal(ls)
 }
 
 func (ls *LimitedString) UnmarshalJSON(data []byte) error {
