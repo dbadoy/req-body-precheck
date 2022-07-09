@@ -91,7 +91,7 @@ func main() {
 			return
 		}
 		// request.Body to []byte
-		// Validation that is correct JSON format
+		// With validation that is correct JSON format
 		raw, err := parseRawRequest(req)
 		if err != nil {
 			fmt.Println(err)
