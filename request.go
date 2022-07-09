@@ -98,11 +98,11 @@ func main() {
 			return
 		}
 		// Check each content size while Unmarhsal
-		a, err := newRequest(raw)
+		res, err := newRequest(raw)
 		if err != nil {
 			fmt.Println(err)
 		} else {
-			fmt.Println(a)
+			fmt.Println(res)
 		}
 	}
 }
